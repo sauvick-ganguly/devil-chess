@@ -7,7 +7,7 @@ function Modes() {
 
   const handleModeClick = (mode) => {
     switch (mode) {
-      case "Multiplayer":
+      case "Multiplayer(":
         // Future multiplayer page
         break;
 
@@ -56,6 +56,7 @@ function Modes() {
             />
 
             <h3>Multiplayer</h3>
+            <h3>(COMING SOON)</h3>
 
             <p>
               Summon an opponent from across the realm and settle it
@@ -80,6 +81,7 @@ function Modes() {
             />
 
             <h3>With Bots</h3>
+            <h3>(COMING SOON)</h3>
 
             <p>
               Face a devil of your choosing, from a mischievous imp
