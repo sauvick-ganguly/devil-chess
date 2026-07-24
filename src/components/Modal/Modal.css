@@ -1,0 +1,185 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(6, 4, 5, 0.82);
+  backdrop-filter: blur(6px);
+
+  animation: fadeIn .2s ease;
+}
+
+.modal {
+  position: relative;
+
+  width: min(460px, 100%);
+  padding: 38px 34px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--line-strong);
+
+  background: linear-gradient(
+    180deg,
+    var(--char-2),
+    var(--void)
+  );
+
+  box-shadow:
+    0 40px 100px -30px rgba(0,0,0,.8);
+
+  animation: modalUp .25s ease;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+
+  background: transparent;
+
+  color: var(--smoke-solid);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+
+  transition: .2s;
+}
+
+.close:hover {
+  border-color: var(--ember);
+  color: var(--ash);
+}
+
+.glyph-lg {
+  margin-bottom: 18px;
+
+  font-size: 46px;
+
+  filter: drop-shadow(
+    0 0 20px rgba(255,90,54,.35)
+  );
+}
+
+.modal h3 {
+  margin-bottom: 12px;
+
+  font-family: var(--display);
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal p {
+  margin-bottom: 24px;
+
+  color: var(--smoke-solid);
+
+  font-size: 13.8px;
+  line-height: 1.7;
+}
+
+.diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.diff-opt {
+  padding: 14px 10px;
+
+  border-radius: 8px;
+  border: 1px solid var(--line-strong);
+
+  background: rgba(255,255,255,.02);
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.diff-opt:hover {
+  border-color: var(--ember);
+  background: rgba(255,90,54,.08);
+}
+
+.n {
+  color: var(--ash);
+
+  font-family: var(--display);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.d {
+  margin-top: 4px;
+
+  color: var(--smoke-solid);
+
+  font-family: var(--mono);
+  font-size: 10.5px;
+}
+
+.modal .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 30px 20px;
+  }
+
+  .diff-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal h3 {
+    font-size: 18px;
+  }
+
+  .glyph-lg {
+    font-size: 40px;
+  }
+}

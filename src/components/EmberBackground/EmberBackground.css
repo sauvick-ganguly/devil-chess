@@ -1,0 +1,50 @@
+.embers {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ember-particle {
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50%;
+    opacity: 0;
+
+    background: radial-gradient(
+        circle,
+        #ff8a4c,
+        #ff5a36 60%,
+        transparent 70%
+    );
+
+    animation: rise linear infinite;
+}
+
+@keyframes rise {
+
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0.85;
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            translateX(var(--drift));
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ember-particle {
+        display: none;
+        animation: none;
+    }
+}

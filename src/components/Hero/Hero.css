@@ -1,0 +1,250 @@
+/* ---------------- hero ---------------- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 24px 100px;
+
+  background:
+    radial-gradient(900px 500px at 50% 8%, rgba(255,90,54,0.14), transparent 60%),
+    radial-gradient(700px 500px at 85% 85%, rgba(122,21,48,0.20), transparent 60%),
+    radial-gradient(700px 500px at 12% 88%, rgba(122,21,48,0.16), transparent 60%),
+    var(--void);
+
+  overflow: hidden;
+}
+
+.eyebrow {
+  position: relative;
+  z-index: 2;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sulfur);
+  margin-bottom: 26px;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+  content: "✦";
+  margin: 0 12px;
+  color: var(--brimstone-2);
+}
+
+.emblem {
+  position: relative;
+  z-index: 2;
+  width: min(360px, 70vw);
+  margin-bottom: 8px;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+
+  font-size: clamp(40px, 8vw, 92px);
+
+  line-height: 0.98;
+  letter-spacing: 2px;
+
+  background: linear-gradient(
+    180deg,
+    #fff3ea 0%,
+    var(--ash) 40%,
+    var(--ember-2) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 0 60px rgba(255,90,54,0.25);
+
+  margin-top: 6px;
+}
+
+.title .small {
+  display: block;
+  font-size: 0.32em;
+  letter-spacing: 8px;
+  font-weight: 600;
+  color: var(--smoke-solid);
+  -webkit-text-fill-color: var(--smoke-solid);
+  margin-bottom: 10px;
+}
+
+.tagline {
+  position: relative;
+  z-index: 2;
+
+  max-width: 560px;
+  margin: 26px auto 40px;
+
+  font-size: 16.5px;
+  line-height: 1.75;
+
+  color: var(--smoke-solid);
+}
+
+.tagline b {
+  color: var(--ash);
+  font-weight: 600;
+}
+
+.hero-ctas {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: .8px;
+
+  padding: 16px 30px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  border: 1px solid transparent;
+
+  transition: transform .15s ease,
+              box-shadow .15s ease,
+              background .15s ease;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn.fire {
+  background: linear-gradient(
+      135deg,
+      var(--ember),
+      #c73a1e
+  );
+
+  color: #1a0805;
+
+  box-shadow: 0 10px 30px -10px rgba(255,90,54,.55);
+}
+
+.btn.fire:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 16px 36px -10px rgba(255,90,54,.7);
+}
+
+.btn.ghost {
+  background: transparent;
+  border-color: var(--line-strong);
+  color: var(--ash);
+}
+
+.btn.ghost:hover {
+  border-color: var(--ember);
+  color: var(--ember-2);
+  transform: translateY(-2px);
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--smoke-solid);
+
+  font-family: var(--mono);
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  opacity: .75;
+}
+
+.scroll-cue .stem {
+  width: 1px;
+  height: 34px;
+
+  background: linear-gradient(
+      180deg,
+      var(--smoke-solid),
+      transparent
+  );
+
+  animation: stem 1.8s ease-in-out infinite;
+}
+
+@keyframes stem {
+
+  0%,100%{
+      opacity:.3;
+  }
+
+  50%{
+      opacity:1;
+  }
+
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+.title {
+  position: relative;
+  z-index: 2;
+
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+
+  font-size: clamp(48px, 8vw, 90px);
+
+  line-height: 1.1;
+  letter-spacing: 2px;
+
+  background: linear-gradient(
+    180deg,
+    #fff3ea 0%,
+    var(--ash) 45%,
+    var(--ember-2) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 0 18px rgba(255, 90, 54, 0.5),
+    0 0 40px rgba(255, 90, 54, 0.25);
+}
+.title .small {
+  font-family: var(--mono);
+  letter-spacing: 6px;
+}

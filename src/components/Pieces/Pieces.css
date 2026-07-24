@@ -1,0 +1,127 @@
+/* ---------------- pieces ---------------- */
+
+.pieces-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width:980px) {
+  .pieces-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:560px) {
+  .pieces-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.piece-card {
+  background: var(--char);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 28px 22px;
+  text-align: center;
+  position: relative;
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.piece-card:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-4px);
+}
+
+.piece-card .glyph {
+  font-size: 44px;
+  margin-bottom: 16px;
+  display: block;
+  line-height: 1;
+  filter: drop-shadow(0 0 18px rgba(255,90,54,.25));
+}
+
+.piece-card .tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--brimstone-2);
+  border: 1px solid var(--brimstone);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 14px;
+}
+
+.piece-card.new .tag {
+  color: var(--sulfur);
+  border-color: var(--sulfur);
+}
+
+.piece-card h4 {
+  font-family: var(--display);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  margin-bottom: 10px;
+}
+
+.piece-card p {
+  font-size: 12.8px;
+  line-height: 1.65;
+  color: var(--smoke-solid);
+}
+.glyph{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.glyph img{
+    width:64px;
+    height:64px;
+    object-fit:contain;
+}
+
+.twin-kings img{
+    width:58px;
+    height:58px;
+}
+.black-wolf{
+    filter:
+        drop-shadow(0 0 4px rgba(255, 90, 54, 0.8))
+        drop-shadow(0 0 10px rgba(255, 90, 54, 0.7))
+        drop-shadow(0 0 18px rgba(122, 21, 48, 0.5));
+
+    transition: filter .3s ease, transform .3s ease;
+}
+
+.black-king{
+    filter:
+        drop-shadow(0 0 4px rgba(255, 90, 54, 0.8))
+        drop-shadow(0 0 10px rgba(255, 90, 54, 0.7))
+        drop-shadow(0 0 18px rgba(122, 21, 48, 0.5));
+
+    transition: filter .3s ease, transform .3s ease;
+}
+
+.black-prelate{
+    filter:
+        drop-shadow(0 0 4px rgba(255, 90, 54, 0.8))
+        drop-shadow(0 0 10px rgba(255, 90, 54, 0.7))
+        drop-shadow(0 0 18px rgba(122, 21, 48, 0.5));
+
+    transition: filter .3s ease, transform .3s ease;
+}
+
+.black-pawn{
+    filter:
+        drop-shadow(0 0 4px rgba(255, 90, 54, 0.8))
+        drop-shadow(0 0 10px rgba(255, 90, 54, 0.7))
+        drop-shadow(0 0 18px rgba(122, 21, 48, 0.5));
+
+    transition: filter .3s ease, transform .3s ease;
+}

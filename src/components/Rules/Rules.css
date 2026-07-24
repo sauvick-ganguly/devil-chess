@@ -1,0 +1,56 @@
+/* ---------------- rule banner ---------------- */
+
+.rule-strip {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  background: linear-gradient(
+      90deg,
+      rgba(122,21,48,.14),
+      rgba(255,90,54,.06)
+  );
+}
+
+.rule-strip .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+
+  background: var(--line);
+}
+
+@media (max-width:760px) {
+  .rule-strip .wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rule-item {
+  background: var(--void);
+  padding: 44px 40px;
+}
+
+.rule-item .mark {
+  display: block;
+  margin-bottom: 14px;
+
+  font-family: var(--display);
+  font-size: 34px;
+
+  color: var(--ember);
+}
+
+.rule-item h4 {
+  font-family: var(--display);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  margin-bottom: 10px;
+}
+
+.rule-item p {
+  color: var(--smoke-solid);
+  font-size: 13.8px;
+  line-height: 1.7;
+  max-width: 440px;
+}

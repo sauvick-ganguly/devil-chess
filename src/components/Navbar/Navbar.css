@@ -1,0 +1,103 @@
+/* ---------------- nav ---------------- */
+
+header.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(10, 7, 8, 0.72);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand svg {
+  width: 30px;
+  height: 30px;
+}
+
+.brand .word {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2.5px;
+}
+
+.brand .word em {
+  font-style: normal;
+  color: var(--ember);
+}
+
+nav.links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+nav.links a {
+  font-size: 12.5px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--smoke-solid);
+  transition: color 0.15s ease;
+}
+
+nav.links a:hover {
+  color: var(--ash);
+}
+
+.nav-cta {
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 3px;
+  border: 1px solid var(--ember);
+  color: var(--ember);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-cta:hover {
+  background: var(--ember);
+  color: #1a0805;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  nav.links {
+    display: none;
+  }
+}
+.navbar:hover{
+    box-shadow:
+        0 4px 18px rgba(255, 90, 54, 0.18),
+        0 0 40px rgba(122, 21, 48, 0.28);
+}
+
+
+.word{
+    font-family: "Cinzel Decorative", serif;
+    letter-spacing: 3px;
+}

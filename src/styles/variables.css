@@ -1,0 +1,18 @@
+:root{
+    --void:#0a0708;
+    --char:#150f11;
+    --char-2:#1c1416;
+    --line:rgba(237,230,226,0.10);
+    --line-strong:rgba(237,230,226,0.18);
+    --ember:#ff5a36;
+    --ember-2:#ff8a4c;
+    --brimstone:#7a1530;
+    --brimstone-2:#4a0d1f;
+    --sulfur:#d4af6a;
+    --ash:#ede6e2;
+    --smoke:#a3949653;
+    --smoke-solid:#9c8a8d;
+    --display:'Cinzel', serif;
+    --body:'Sora', sans-serif;
+    --mono:'JetBrains Mono', monospace;
+  }
