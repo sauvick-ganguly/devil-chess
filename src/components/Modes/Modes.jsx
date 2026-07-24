@@ -16,7 +16,7 @@ function Modes() {
         break;
 
       case "Pass & Play":
-        window.location.assign("https://devil-chess-engine.vercel.app/");
+        window.location.assign("https://devil-chess-engine-ten.vercel.app/");
         break;
 
       default:
