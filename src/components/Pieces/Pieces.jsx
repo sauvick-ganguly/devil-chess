@@ -14,7 +14,7 @@ function Pieces() {
           <h2>Pieces Bound in Brimstone</h2>
 
           <p>
-            Two of the eight are unlike anything on a mortal board.
+            Four of the eight are unlike anything on a mortal board.
             Learn them before they learn you.
           </p>
         </div>
