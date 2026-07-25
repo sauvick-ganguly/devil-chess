@@ -50,7 +50,7 @@ function Modes() {
             <div className="num">I</div>
 
             <img
-              src={duel}
+              src={PnP}
               alt="Duel"
               className="icon"
             />
@@ -100,7 +100,7 @@ function Modes() {
             <div className="num">III</div>
 
             <img
-              src={PnP}
+              src={duel}
               alt="Pass And Play"
               className="icon"
             />
