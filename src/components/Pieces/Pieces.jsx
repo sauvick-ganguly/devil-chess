@@ -42,7 +42,7 @@ function Pieces() {
             <h4>Twin Kings</h4>
 
             <p>
-              Each army is commanded by the rightful King and his Twin, corrupted by the Devil. The fall of either King seals the kingdom's fate, ending the game at once.
+              Each army is commanded by the rightful King and the Devil King, the Devil's own representative. Born of the Devil's bargain for the Queen's soul, he bears authority equal to the King's. The fall of either King seals the kingdom's fate, ending the game at once.
             </p>
 
           </div>

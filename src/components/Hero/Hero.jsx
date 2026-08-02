@@ -64,7 +64,7 @@ function Hero() {
           />
         </g>
 
-           <text
+        <text
           x="200"
           y="46"
           textAnchor="middle"
@@ -89,6 +89,12 @@ function Hero() {
       </p>
 
       <div className="hero-ctas">
+        <a
+          href="https://devil-chess-story.vercel.app/"
+          className="btn ghost"
+        >
+          Read the Story & Game Rules
+        </a>
 
         <button
           className="btn fire"

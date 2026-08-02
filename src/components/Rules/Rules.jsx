@@ -11,11 +11,12 @@ function Rules() {
 
           <h4>Twin Check, Instant Death</h4>
 
-          <p>
-            Checkmate one king the old way, or catch both
-            kings in check on the very same move — either
-            way, the game is over before your opponent
-            gets to answer.
+          <p
+            style={{
+              minHeight: "140px",
+            }}
+          >
+            The Queen's soul remains imprisoned by the Devil, leaving the Devil King to occupy her place until she returns. Though he serves the Devil, his survival is essential to the kingdom's fate. Checkmate either King, or place both Kings in check on the same move, and the game ends before your opponent can answer.
           </p>
 
         </div>
@@ -26,8 +27,12 @@ function Rules() {
 
           <h4>Two Kings, Two Castles</h4>
 
-          <p>
-            The Twin Kings command unmatched coordination. Either King may castle with any Rook, or both Twins may independently castle with the Rook guarding their respective side of the board.
+          <p
+            style={{
+              minHeight: "140px",
+            }}
+          >
+            Though they rule beneath different crowns, the rightful King and the Devil King share perfect coordination. Either King may castle with any Rook, while each may also independently castle with the Rook guarding his own side of the board.
           </p>
 
         </div>
