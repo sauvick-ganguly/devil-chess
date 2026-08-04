@@ -7,12 +7,13 @@ function Modes() {
 
   const handleModeClick = (mode) => {
     switch (mode) {
-      case "Multiplayer(":
+
+      case "Multiplayer":
         // Future multiplayer page
         break;
 
       case "With Bots":
-        // Future bot page
+        window.location.assign("https://devil-chess-bot.vercel.app/");
         break;
 
       case "Pass & Play":
@@ -51,7 +52,7 @@ function Modes() {
 
             <img
               src={PnP}
-              alt="Duel"
+              alt="Multiplayer"
               className="icon"
             />
 
@@ -76,12 +77,11 @@ function Modes() {
 
             <img
               src={bots}
-              alt="Mechanical Bot"
+              alt="With Bots"
               className="icon"
             />
 
             <h3>With Bots</h3>
-            <h3>(COMING SOON)</h3>
 
             <p>
               Face a devil of your choosing, from a mischievous imp
@@ -89,7 +89,7 @@ function Modes() {
             </p>
 
             <span className="enter">
-              Choose Your Devil
+              Challenge the Devil
             </span>
           </div>
 
