@@ -9,7 +9,7 @@ function Modes() {
     switch (mode) {
 
       case "Multiplayer":
-        // Future multiplayer page
+        window.location.assign("https://devil-chess-multiplayer.vercel.app/");
         break;
 
       case "With Bots":
@@ -51,13 +51,12 @@ function Modes() {
             <div className="num">I</div>
 
             <img
-              src={PnP}
+              src={duel}
               alt="Multiplayer"
               className="icon"
             />
 
             <h3>Multiplayer</h3>
-            <h3>(COMING SOON)</h3>
 
             <p>
               Summon an opponent from across the realm and settle it
@@ -100,7 +99,7 @@ function Modes() {
             <div className="num">III</div>
 
             <img
-              src={duel}
+              src={PnP}
               alt="Pass And Play"
               className="icon"
             />
