@@ -90,7 +90,7 @@ function Hero() {
 
       <div className="hero-ctas">
         <a
-          href="https://devil-chess-story.vercel.app/"
+          href="http://story.devilchess.com/"
           className="btn ghost"
         >
           Read the Story & Game Rules

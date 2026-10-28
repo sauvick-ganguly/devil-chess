@@ -9,15 +9,15 @@ function Modes() {
     switch (mode) {
 
       case "Multiplayer":
-        window.location.assign("https://devil-chess-multiplayer.vercel.app/");
+        window.location.assign("https://multiplayer.devilchess.com");
         break;
 
       case "With Bots":
-        window.location.assign("https://devil-chess-bot.vercel.app/");
+        window.location.assign("https://bots.devilchess.com");
         break;
 
       case "Pass & Play":
-        window.location.assign("https://devil-chess-engine-ten.vercel.app/");
+        window.location.assign("https://passandplay.devilchess.com");
         break;
 
       default:
